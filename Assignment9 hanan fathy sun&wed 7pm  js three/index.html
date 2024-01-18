@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , , initial-scale=1.0"">  
+        <title>Bookmark</title>
+
+           <!-- font awsome icons -->
+        <link rel="stylesheet" href="./css/all.min.css" />
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+<body >  
+    <section class="container">
+        <div class="member ">
+            <h1 class="py-2"> Bookmarker <sapn class="layer"></sapn></h1>
+        </div> 
+        <div class="dottedLine"></div> 
+        <div class="item d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-bookmark"></i>
+            <h2> Bookmark your favorite sites </h2>
+            <i class="fa-solid fa-bookmark"></i>
+            <!-- <i class="fa-solid fa-laptop p-4 fa-border-icon"></i> -->
+        </div>
+
+
+        
+    <main class="  mx-auto">
+ 
+        <section class=" p-3 ">
+            <div class="mb-3">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <label for="siteNameInput"> Site Name:</label>
+                 <input oninput="validationName()"  class="form-control" type="text" id="siteNameInput" placeholder="Bookmark Name">
+                <p id="messageName" class="alert alert-danger d-none bg-secondary">invalid web Name Pattern</p>
+            </div>        
+            <div class="mb-3">
+                <i class="fa-solid fa-link bg-dark"></i>
+                 <label for="siteURLInput">Site URL:</label>
+                  <input oninput="validationsiteURL()" class="form-control" type="text" id="siteURLInput" placeholder="Website URL">
+                  <p id="messagesiteURL" class="alert alert-danger d-none bg-secondary">invalid siteURL Pattern</p>
+            </div>
+        <div class="bttnadd">
+            <BUtton onclick="addWeb()" id="addBtn"  class="btn px-5" >Submit</BUtton>
+        </div>
+        </section>
+        <div class="dottedLine"></div>    
+        <!-- =============================================== -->
+         <section class=" mt-4 text-center">
+            <table class="table table-light">
+                <thead>
+                    <tr>
+                        <th>index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <!-- <tbody id="tableContent"></tbody> -->
+                <tbody id="tableBody">
+                    <td>
+                        <button class="btnvisit btn btn-outline-warning btn-sm">visit</button>
+                        <button class="btndelete btn btn-outline-danger btn-sm">delete</button>
+                    </td>
+                </tbody>
+            </table>
+        </section> 
+    
+      </main> 
+ </section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
